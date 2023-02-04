@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cookies app 4</title>
+</head>
+<body>
+<div>
+    <h1> Add items</h1>
+    <hr/>
+    <form method="post" action="/displayitem/">
+        {{ form1.as_p }}
+        {% csrf_token %}
+        <input type="submit" value="Add items">
+
+    </form>
+    <br/>
+    <hr/>
+    <a href="/displayitem/">display items</a>
+</div>
+</body>
+</html>
